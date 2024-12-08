@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio-data</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styles for the page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cacdd1;
+        }
+
+        header, footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .biodata {
+            padding: 20px;
+            max-width: 900px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .bio-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .bio-info {
+            flex: 1;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007BFF;
+        }
+
+        .extra-content {
+            display: none;
+            transition: max-height 0.3s ease;
+        }
+
+        .see-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .see-more:hover {
+            background-color: #0056b3;
+        }
+
+        .declaration {
+            margin-top: 30px;
+        }
+
+        .signature {
+            font-style: italic;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Bio-data</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+        </nav>
+    </header>
+    <main class="biodata">
+        <h2>Bio Data</h2>
+        <div class="bio-content">
+            <div class="bio-info">
+                <p><strong>Name:</strong> UDAY RAJ</p>
+                <p><strong>Father's Name:</strong> REYNOLD BOSCO</p>
+                <p><strong>Mobile:</strong> +91 6363349901</p>
+                <span id="more" class="extra-content">
+                    <p><strong>Email ID:</strong> udra22cs@cmrit.ac.in</p>
+                    <p><strong>Gender:</strong> Male</p>
+                    <p><strong>Date of Birth:</strong> 06/11/2003</p>
+                    <p><strong>Nationality:</strong> Indian</p>
+                    <p><strong>Languages Known:</strong> Tamil, Kannada, English, Hindi</p>
+                    <p><strong>Address:</strong> 10th cross vijayanagar whitefield, Bengaluru 560062</p>
+                </span>
+                <button class="see-more" onclick="toggleMore()">See More</button>
+            </div>
+            <img src="Screenshot 2024-12-08 125252.png" alt="Profile Picture" class="profile-picture">
+        </div>
+        <div class="declaration">
+            <h3>Declaration</h3>
+            <p>I hereby declare that all the information provided here is true to the best of my knowledge.</p>
+            <p><strong>Place:</strong> Bengaluru</p>
+            <p><strong>Date:</strong> 20/11/2024</p>
+            <p class="signature"><strong>Signature:</strong> UDAY RAJ</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2024 UDAY RAJ. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMore() {
+            var moreText = document.getElementById("more");
+            var seeMoreBtn = document.querySelector(".see-more");
+            if (moreText.style.display === "none" || moreText.style.display === "") {
+                moreText.style.display = "block";
+                seeMoreBtn.innerText = "See Less";
+            } else {
+                moreText.style.display = "none";
+                seeMoreBtn.innerText = "See More";
+            }
+        }
+    </script>
+</body>
+</html>

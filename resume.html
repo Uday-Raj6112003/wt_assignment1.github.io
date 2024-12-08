@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #cacdd1;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 1rem;
+        }
+
+        nav a {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+
+        main {
+            padding: 2rem;
+            margin-top: 20px;
+        }
+
+        section {
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 1.1rem;
+            line-height: 1.5;
+        }
+
+        button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Resume</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#career">Career Objective</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="bio.html">Bio-data</a>
+        </nav>
+    </header>
+    <main class="resume">
+        <section id="career">
+            <h2>Career Objective</h2>
+            <p>To work in a challenging environment where I can utilize my skills and contribute to the organization’s growth.</p>
+        </section>
+        <section id="education">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Engineering (CSE) – CMRIT (2026, Pursuing, 9.1 CGPA)</li>
+                <li>PUC - St Joseph's Pre-University College, Whitefield (2022, 94.8%)</li>
+                <li>SSLC - Holy Cross School Whitefield (2020, 93.12%)</li>
+            </ul>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <p><strong>Programming Languages:</strong> C, Java, Python, JavaScript</p>
+            <p><strong>Databases:</strong> MySQL, MongoDB</p>
+        </section>
+    </main>
+    <button onclick="window.print()">Print/Save as PDF</button>
+    <footer>
+        <p>© 2024 Uday. All rights reserved.</p>
+    </footer>
+</body>
+</html>
